@@ -6,11 +6,54 @@ nav {
     height: 100px;
     position: fixed;
     z-index: 10;
+    order: -1;
 }
 
-.sidebar{
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.wrap-div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    flex: 3;
+    position: relative;
+    top: 100px;
+  
+}
+
+.wrap-div>* {
+    padding: 12px;
+    position: relative;
+
+}
+
+.content {
+    background-color: tomato;
+    height: 1000px;
+    flex: 1 0 auto ;
+
+}
+
+.sidebar {
     background-color: cadetblue;
-    width: 100px;
-    height: auto;
+    width: 70px;
+    height: 1000px;
+
 }
 
+.footer{
+    position: relative;
+    bottom: 0;
+    background-color: thistle;
+    width: 100%;
+    height: 100px;
+}
