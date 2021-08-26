@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #21445e;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrapper {
+    margin: auto;
+    position: absolute;
+    top: 25% !important;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+h1 {
+    cursor: default;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto;
+    font-size: 144px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 144px;
+    letter-spacing: 0.25;
+    font-family: PaytoneOne;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    color: #d6616f;
+    text-shadow: 0 1px 0 rgb(204, 169, 239), 0 2px 0 rgb(204, 169, 239), 0 3px 0 rgb(212, 189, 218),
+        0 10px 15px rgba(204, 169, 239, 0.89);
+    -webkit-animation: bounce 0.29s ease infinite alternate;
+
+}
+
+.logo:nth-child(1) {
+
+    -webkit-animation-delay: 0.3s;
+}
+
+.logo:nth-child(2) {
+
+    -webkit-animation-delay: 0.4s;
+}
+
+.logo:nth-child(3) {
+
+    -webkit-animation-delay: 0.5s;
+}
+
+
+
+@-webkit-keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 rgb(204, 169, 239), 0 2px 0 rgb(204, 169, 239), 0 3px 0 rgb(212, 189, 218), 0 6px 0 transparent,
+            0 9px 0 transparent, 0 15px 10px rgb(204, 169, 239);
+    }
+}
+
+.loading {
+    position: relative;
+    top: 5px;
+    width: 8em;
+    margin: 0 auto;
+    border-right: 1px solid rgba(204, 169, 239, 0.89);
+    font-size: 16px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(204, 169, 239, 0.76);
+    font-family: Palanquin-Regular;
+    letter-spacing: 0.1em;
+}
+
+.typewriter {
+    animation: typing 4s steps(40) 1s 1 normal both,
+        blinktextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 8em;
+    }
+}
+
+@keyframes blinktextCursor {
+    from {
+        border-right-color: rgba(204, 169, 239, 0.89);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}

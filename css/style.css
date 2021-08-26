@@ -1,4 +1,3 @@
-import {
-    content: url('/css/fonts.css');
+html{
+    scroll-behavior: smooth;
 }
-
