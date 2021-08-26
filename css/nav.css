@@ -1,0 +1,70 @@
+.navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    flex-flow: wrap row;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    padding: 12px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 50%;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgba(238, 107, 120, 0.99);
+    text-shadow: -2px 1px 0px rgba(204, 169, 239, 0.82);
+    font-family: PaytoneOne;
+    font-size: 40px;
+}
+
+.nav-items {
+    padding: 12px;
+
+    font-family: PaytoneOne;
+    color: #D9E7F2;
+}
+
+.active {
+    border-bottom: solid 2px black;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #D9E7F2;
+    font-size: 22px;
+}
+
+/* burger*/
+
+
+
+.burger {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 29px;
+    height: 3px;
+    background-color: #D9E7F2;
+    margin: 6px 0;
+    transition: 0.4s;
+}

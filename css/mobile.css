@@ -1,0 +1,67 @@
+@media screen and (max-width: 500px) and (min-width: 360px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .sidebar {
+        width: 35px;
+    }
+
+    .navbar-div {
+        width: 100%;
+    }
+
+    .nav-menu {
+        position: absolute;
+        margin: 0;
+        height: 90vh;
+        width: 50%;
+        top: 70px;
+        right: 0;
+        background-color: #002138;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transfom 0.5s ease-in;
+    }
+
+    .nav-items {
+        border: none;
+        padding: 16px;
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
