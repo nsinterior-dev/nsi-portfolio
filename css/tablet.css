@@ -36,6 +36,29 @@
     .burger {
         display: block;
     }
+
+    .left {
+        right: 120%;
+        transform: rotate(90deg);
+    }
+
+    .right {
+
+        right: 200%;
+    }
+
+    .intro-header {
+        width: 70%;
+        margin: 0;
+    }
+
+    .intro-title,
+    .intro-name {
+        font-size: 54px;
+    }
+
+
+
 }
 
 

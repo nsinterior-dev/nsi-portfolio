@@ -1,0 +1,34 @@
+.intro {
+    background-color: burlywood;
+    margin:auto;
+    width: 100%;
+    height: 80vh;
+}
+
+.intro-header {
+    
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 95%;
+    align-items: center;
+}
+
+.intro-title,
+.intro-name {
+    font-family: PalanquinDark-Regular;
+    font-size: 76px;
+    font-weight: 600;
+}
+
+.intro-title {
+    color: #D9E7F2;
+
+}
+
+.intro-name {
+    color: rgba(252, 241, 222, 0.95);
+
+    text-shadow: -17px -16px 4px rgba(238, 107, 120, 0.12), 61px 41px 5px rgba(217, 191, 243, 0.14), 28px 16px 8px rgba(0, 0, 0, 0.3);
+
+}

@@ -1,0 +1,44 @@
+.sidebar-intro {
+    margin: auto;
+    width: 130px;
+    position: relative;
+    top: 40%;
+    transform: rotate(90deg);
+    padding: 18px;
+    color: rgba(180, 207, 228, 0.82);
+    font-family: Palanquin;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+}
+
+.left {
+    right: 40%;
+    transform: rotate(90deg);
+}
+
+.right {
+  
+    right: 100%;
+}
+
+.right-scroll,
+.left-scroll {
+    position: relative;
+    top: 0;
+    animation: introSide ease-in-out 0.4s infinite;
+}
+
+@keyframes introSide {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 10px;
+    }
+}
