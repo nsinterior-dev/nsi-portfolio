@@ -2,13 +2,13 @@
     margin: auto;
     width: 130px;
     position: relative;
-    top: 40%;
+    top: 70%;
     transform: rotate(90deg);
     padding: 18px;
     color: rgba(180, 207, 228, 0.82);
-    font-family: Palanquin;
+    font-family: Palanquin-Regular;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     line-height: 36px;
     display: flex;
@@ -22,7 +22,7 @@
 }
 
 .right {
-  
+
     right: 100%;
 }
 
@@ -41,4 +41,27 @@
     to {
         left: 10px;
     }
+}
+
+.contacts_div {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 40%;
+    width: 110px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    right: 0.10px;
+}
+
+.contact-me {
+    font-family: Palanquin-Regular;
+    color: #CCA9EF;
+    font-size: 20px;
+}
+
+.icon:hover,
+.icon:focus {
+   color: #EE6B78;
 }

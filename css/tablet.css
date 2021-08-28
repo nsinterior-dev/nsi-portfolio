@@ -48,17 +48,43 @@
     }
 
     .intro-header {
-        width: 70%;
+        width: 80%;
         margin: 0;
     }
 
     .intro-title,
     .intro-name {
-        font-size: 54px;
+        font-size: 30px;
     }
 
+    .des {
+        font-size: 16px;
+    }
 
+    .dream {
+        font-size: 10px;
+    }
 
+    .resume-section {
+        width: 60%;
+        padding: 2px;
+    }
+
+    .resume-btn {
+        padding: 12px;
+        font-size: 10px;
+        border: solid 2px;
+        left: 0;
+    }
+
+    .trivia {
+        width: 30%;
+    }
+
+    .note {
+        width: 100%;
+        font-size: 5px;
+    }
 }
 
 

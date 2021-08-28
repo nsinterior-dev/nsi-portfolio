@@ -1,17 +1,26 @@
 .intro {
-    background-color: burlywood;
-    margin:auto;
+    white-space: normal;
+    margin: auto;
     width: 100%;
-    height: 80vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .intro-header {
-    
     display: flex;
     flex-flow: row wrap;
-    margin: auto;
-    width: 95%;
-    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 6%;
+}
+
+.intro-content {
+    margin-left: auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
 }
 
 .intro-title,
@@ -23,12 +32,132 @@
 
 .intro-title {
     color: #D9E7F2;
-
+    transition: 0.3s ease-in-out;
 }
 
 .intro-name {
     color: rgba(252, 241, 222, 0.95);
 
     text-shadow: -17px -16px 4px rgba(238, 107, 120, 0.12), 61px 41px 5px rgba(217, 191, 243, 0.14), 28px 16px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
 
+.intro-title:hover,
+.intro-name:hover,
+.intro-title:focus,
+.intro-name:focus {
+    cursor: pointer;
+    color: #EE6B78;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 5s infinite;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+.intro-description {
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    font-family: Palanquin-Regular;
+
+}
+
+.des {
+    font-size: 30px;
+    color: #B4CFE4;
+    font-size: 35px;
+}
+
+.dream {
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.p-1 {
+    color: #B4CFE4;
+}
+
+.p-2 {
+    color: #fcf1decb;
+    font-weight: 600;
+}
+
+/*resume section*/
+
+.resume-section {
+
+    position: relative;
+    top: 20%;
+
+}
+
+.resume-btn {
+    position: relative;
+    padding: 16px;
+    margin: auto;
+    text-decoration: none;
+    font-family: Palanquin-Regular;
+    color: #EE6B78;
+    font-weight: 600;
+    border: solid 7px #EE6B78;
+    background-color: transparent;
+    transition: ease 0.3s;
+}
+
+.resume-btn .span {
+    z-index: 2;
+    position: relative;
+}
+
+.resume-btn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #EE6B78;
+    transition: ease .35s;
+
+}
+
+.resume-btn:hover,
+.resume-btn:focus {
+    color: #fcf1decb;
+    background-color: #EE6B78;
+}
+
+.resume-btn:hover:after {
+    width: 100%;
+
+}
+
+.trivia {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    top: 30%;
+    margin: auto;
+}
+
+.note {
+    width: 40%;
+    font-family: Palanquin-Regular;
+    font-size: 16px;
+    color: #9DA1C1;
+    text-align: left;
 }
