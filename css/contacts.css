@@ -1,0 +1,46 @@
+.contacts {
+    white-space: normal;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(93, 211, 35) !important;
+    height: 80vh;
+}
+
+.contacts-content {
+    margin-left: auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    background-color: rgb(185, 125, 45);
+}
+
+.sidebar-contacts {
+    margin: auto;
+    position: relative;
+    width: 130px;
+    top: 60% !important;
+    transform: rotate(270deg);
+    padding: 18px;
+    color: rgba(180, 207, 228, 0.82);
+    font-family: Palanquin-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+
+}
+
+.c-left{
+    right: 40%;
+    top: 70% !important;
+}
+
+.c-right{
+    right: 100%;
+}
