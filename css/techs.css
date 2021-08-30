@@ -1,0 +1,19 @@
+.techs {
+    white-space: normal;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(72, 107, 55) !important;
+    height: 80vh;
+}
+
+.tech-content {
+    margin-left: auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    background-color: rgb(109, 87, 59);
+}

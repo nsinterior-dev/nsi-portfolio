@@ -48,48 +48,6 @@
         right: 380%;
     }
 
-    .intro {
-        width: 100%;
-    }
-
-    .intro-header {
-        width: 100%;
-        margin: 0;
-    }
-
-    .intro-title,
-    .intro-name {
-        font-size: 25px;
-    }
-
-    .des {
-        margin-top: 10px;
-        font-size: 12px;
-        width: 70%;
-    }
-
-    .dream {
-        font-size: 10px;
-        width: 70%;
-    }
-
-    .resume-section {
-        width: 60%;
-        padding: 2px;
-    }
-
-    .resume-btn {
-        padding: 8px;
-        font-size: 10px;
-        border: solid 2px;
-        left: 0;
-    }
-
-   
-
-    .note {
-        font-size: 6px;
-    }
 }
 
 .nav-active {

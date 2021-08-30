@@ -1,0 +1,19 @@
+.works {
+    white-space: normal;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(134, 87, 87) !important;
+    height: 80vh;
+}
+
+.work-content {
+    margin-left: auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    background-color: rgb(75, 67, 58);
+}

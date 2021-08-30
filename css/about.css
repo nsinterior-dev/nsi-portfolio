@@ -1,0 +1,75 @@
+.about {
+    white-space: normal;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.about-content {
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+}
+
+.me-myself {
+    position: relative;
+    top: 5%;
+    margin-top: 5px;
+    width: 60%;
+    height: auto;
+}
+
+.me-myself-header {
+    font-family: PaytoneOne;
+    font-size: 50px;
+    color: #F3E1C0;
+
+}
+
+.p-content {
+    margin-top: 10px;
+}
+
+.me-myself-content {
+    margin-top: 10px;
+    font-family: Palanquin-Regular;
+    width: 70%;
+    font-size: 18px;
+    color: #B4CFE4;
+}
+
+.me-myself-photo-div {
+    position: relative;
+    margin-top: 5px;
+    top: 10%;
+    width: 40%;
+  
+    height: 60vh;
+}
+
+.polaroid {
+    margin: auto;
+    background-color: #e4c8ff;
+    box-shadow: 4px 12px 4px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    height: 570px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.me {
+    width: 340px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    filter: drop-shadow(10px 13px 9px rgba(0, 0, 0, 0.25));
+
+}
