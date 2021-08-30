@@ -1,3 +1,25 @@
-html{
+html {
     scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
+.footer-content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-flow: column wrap;
+}
+
+.designed,
+.inspired,
+.link {
+    margin-top: 10px;
+    color: rgba(217, 191, 243, 0.71);
+}
+
+.nav-links:hover {
+    color: #EE6B78FC;
+    border-bottom: solid 2px #EE6B78FC;
 }

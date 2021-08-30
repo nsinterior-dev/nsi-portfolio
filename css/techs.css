@@ -6,8 +6,9 @@
     flex-flow: row wrap;
     justify-content: center;
     min-height: 100vh;
-    background-color: rgb(72, 107, 55) !important;
-    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
 }
 
 .tech-content {
@@ -15,7 +16,6 @@
     display: flex;
     flex-flow: column wrap;
     width: 90%;
-    background-color: rgb(109, 87, 59);
 }
 
 .tech-header {
@@ -28,4 +28,156 @@
     font-family: PaytoneOne;
     font-size: 50px;
     color: #F3E1C0;
+}
+
+.tech-wrapper {
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    height: 50vh;
+}
+
+.tech-des {
+    width: 50%;
+    margin-top: 20px;
+    color: #B4CFE4;
+    font-family: Palanquin-Regular;
+    font-size: 20px;
+
+}
+
+.area {
+    width: 50%;
+    perspective: 1500px;
+    display: flex;
+
+}
+
+.box-area {
+    top: 0 !important;
+    margin: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+.box {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+.box-front {
+    transform: translateX(-200px) translateY(-200px) translateZ(200px);
+
+}
+
+.box-back {
+    transform: translateX(-200px) translateY(-200px) translateZ(-200px);
+
+}
+
+.box-left {
+    transform: translateY(-200px) translateX(-400px) rotateY(90deg);
+
+}
+
+.box-right {
+    transform: translateY(-200px) rotateY(90deg);
+
+}
+
+.box-bottom {
+    transform: translateX(-200px) rotateX(90deg);
+
+}
+
+.box-top {
+    transform: translateX(-200px) translateY(-400px) rotateX(90deg);
+
+}
+
+.this-hover-mirror {
+    transform: scaleX(-1);
+    color: #CCA9EF;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.this-hover {
+    color: #CCA9EF;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.top-right-text {
+    position: relative;
+    left: 10%;
+}
+
+.top-right-text-little {
+    position: relative;
+    left: 20%;
+}
+
+.top-right-text-little-more {
+    position: relative;
+    left: 30%;
+}
+
+.top-right-text-little-little {
+    position: relative;
+    left: 40%;
+    width: 50%;
+}
+
+.bottom-right {
+    position: relative;
+    left: 60%;
+}
+
+.middle-right-text {
+    position: relative;
+    left: 30%;
+}
+
+.ctop-right-text {
+    position: relative;
+    right: 10%;
+}
+
+.cmiddle-text {
+    position: relative;
+    right: 30%;
+}
+
+.cmiddle-right-text {
+    position: relative;
+    right: 40%;
+}
+
+.cbottom-right {
+    position: relative;
+    right: 70%;
+}
+
+.this-hover:hover,
+.this-hover-mirror:hover {
+    color: #94c8e6;
+    cursor: pointer;
+    font-weight: 600;
 }

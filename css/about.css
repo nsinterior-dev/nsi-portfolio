@@ -6,7 +6,9 @@
     flex-flow: row wrap;
     justify-content: center;
     min-height: 100vh;
-    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    top: 100px;
 }
 
 .about-content {
@@ -48,7 +50,7 @@
     margin-top: 5px;
     top: 10%;
     width: 40%;
-  
+
     height: 60vh;
 }
 

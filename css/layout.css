@@ -11,7 +11,9 @@
     justify-content: center;
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 .wrapper {
     width: 100%;
@@ -27,8 +29,8 @@
     display: flex;
     flex-flow: column wrap;
     position: relative;
-    top: 100px;
-    overflow: hidden;
+    top: 130px;
+
 }
 
 .wrap-div>* {
@@ -43,11 +45,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    order: -1;
+
 }
 
 .sidebar {
-   
+
     width: 70px !important;
     height: auto;
 
@@ -56,7 +58,7 @@
 .footer {
     position: relative;
     bottom: 0;
-    background-color: thistle;
+    background: #275070F7;
     width: 100%;
     height: 100px;
 }

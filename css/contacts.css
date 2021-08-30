@@ -5,9 +5,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    min-height: 100vh;
-    background-color: rgb(93, 211, 35) !important;
-    height: 80vh;
+    min-height: 110vh;
+  
+    overflow: hidden;
+    position: relative;
+    top: 100px;
 }
 
 .contacts-content {
@@ -15,7 +17,6 @@
     display: flex;
     flex-flow: column wrap;
     width: 90%;
-    background-color: rgb(185, 125, 45);
 }
 
 .sidebar-contacts {
@@ -36,11 +37,123 @@
 
 }
 
-.c-left{
+.c-left {
     right: 40%;
     top: 70% !important;
 }
 
-.c-right{
+.c-right {
     right: 100%;
+}
+
+.contacts-header {
+    margin-top: 60px;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.contact-title {
+
+    font-family: PaytoneOne;
+    font-size: 50px;
+    color: #F3E1C0;
+
+}
+
+.contact-description {
+    width: 50%;
+    margin-top: 20px;
+    color: #B4CFE4;
+    font-family: Palanquin-Regular;
+    font-size: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.name-div {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+   
+    justify-content: space-between;
+}
+
+.name,
+.email {
+    width: 44%;
+
+}
+
+.name,
+.email,
+.subject,
+.message,
+.submitbtn {
+    padding: 16px 18px;
+    margin: 10px 0;
+    font-family: Palanquin-Regular;
+    font-size: 16px;
+}
+
+.name,
+.email,
+.subject,
+.message {
+    background-color: rgba(0, 33, 56, 0.76);
+    color: #B4CFE4;
+}
+
+.message {
+    height: 100px;
+    resize: none;
+}
+
+
+.submitbtn {
+    position: relative;
+    left: 24%;
+    padding: 16px 160px;
+    margin: auto;
+    text-decoration: none;
+    font-family: Palanquin-Regular;
+    color: #EE6B78;
+    font-weight: 600;
+    border: solid 7px #EE6B78;
+    background-color: transparent;
+    transition: ease 0.3s;
+}
+
+
+.submitbtn::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #EE6B78;
+    transition: ease .35s;
+
+}
+
+.submitbtn:hover,
+.submitbtn:focus {
+    color: #fcf1decb;
+    background-color: #EE6B78;
+}
+
+.submitbtn:hover:after {
+    width: 100%;
+
 }
