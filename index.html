@@ -18,6 +18,23 @@
         <link href="./css/tablet.css" rel="stylesheet" />
         <link rel="shortcut icon" href="./icons/%PUBLIC_URL%/favicon.ico" />
         <link rel="shortcut icon" href="./icons/coeli.png" />
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/8.9.1/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/8.9.1/firebase-auth.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-database.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-firestore.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-functions.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-storage.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-analytics.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-remote-config.js"></script>
+        <script defer src="/__/firebase/8.9.1/firebase-performance.js"></script>
+        <!-- 
+              initialize the SDK after all desired features are loaded, set useEmulator to false
+              to avoid connecting the SDK to running emulators.
+            -->
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
         <title>nsi</title>
     </head>
     <body>
@@ -425,8 +442,8 @@
                                                 If you are interested, don’t hesitate to contact me. You can direct use the form for requests and questions.
                                             </p>
                                         </div>
-                                        <div class="form-group" action="mailto: interiornicolle@gmail.com" method="post">
-                                            <form>
+                                        <div class="form-group">
+                                            <form action="https://formspree.io/f/mpzkkqlg" id="my-form" method="POST">
                                                 <div class="name-div">
                                                     <input type="text" class="name" name="name" placeholder="Name" /> <input type="email" class="email" placeholder="Email"  name="email" />
                                                 </div>
@@ -436,7 +453,8 @@
                                                 <input type="submit" class="submitbtn" value="Send Message!"/>
                                             </form>
                                         </div>
-                                    
+                                        
+                                        <div id="status"></div>
                                     
                                     </div>
                                     
@@ -475,6 +493,7 @@
                 
     </body>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/mail.js"></script>
   
 
 </html>

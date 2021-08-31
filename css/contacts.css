@@ -6,10 +6,10 @@
     flex-flow: row wrap;
     justify-content: center;
     min-height: 110vh;
-  
+
     overflow: hidden;
     position: relative;
-    top: 100px;
+
 }
 
 .contacts-content {
@@ -85,7 +85,7 @@ form {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-   
+
     justify-content: space-between;
 }
 
@@ -104,6 +104,7 @@ form {
     margin: 10px 0;
     font-family: Palanquin-Regular;
     font-size: 16px;
+    outline: none;
 }
 
 .name,
@@ -112,6 +113,7 @@ form {
 .message {
     background-color: rgba(0, 33, 56, 0.76);
     color: #B4CFE4;
+    border: none;
 }
 
 .message {
@@ -156,4 +158,43 @@ form {
 .submitbtn:hover:after {
     width: 100%;
 
+}
+
+#status {
+    font-family: Palanquin-Regular;
+    color: #b4cfe4dc;
+    transition: 0.3s ease display;
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left: 29%;
+    margin-top: 10px;
+}
+
+#status.success {
+    background-color: #33632bb7;
+    animation: status 3s ease forwards;
+}
+
+#status.error {
+    background-color: #7e3e35b7;
+    animation: status 3s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
